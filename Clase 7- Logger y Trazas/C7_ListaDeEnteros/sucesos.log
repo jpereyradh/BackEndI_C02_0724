@@ -1,0 +1,5 @@
+[2024-08-01 19:47:24] [ INFO ] [App:19] la longitud de la lista mayor a  5
+[2024-08-01 19:49:30] [ INFO ] [App:19] la longitud de la lista mayor a  5
+[2024-08-01 19:49:30] [ WARN ] [Main:12] proceso terminado con exito
+[2024-08-01 19:50:23] [ INFO ] [App:24] la longitud de la lista mayor a  5
+[2024-08-01 19:50:23] [ WARN ] [Main:12] proceso terminado con exito: [0, 1, 2, 3, 4, 5]
