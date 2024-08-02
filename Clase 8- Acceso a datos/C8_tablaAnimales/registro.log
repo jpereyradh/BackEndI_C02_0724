@@ -1,0 +1,15 @@
+[2024-08-01 21:56:36] [ INFO ] [Main:15] conexion establecida
+[2024-08-01 21:56:36] [ ERROR] [Main:47] Error de Sintaxis en sentencia SQL "CREATE TABLE [*](ID INT PRIMARY KEY, NOMBRE VARCHAR(40) NOT NULL, TIPO VARCHAR(45) NOT NULL)"; se esperaba "identifier"
+Syntax error in SQL statement "CREATE TABLE [*](ID INT PRIMARY KEY, NOMBRE VARCHAR(40) NOT NULL, TIPO VARCHAR(45) NOT NULL)"; expected "identifier"; SQL statement:
+CREATE TABLE (ID INT PRIMARY KEY, NOMBRE VARCHAR(40) NOT NULL, TIPO VARCHAR(45) NOT NULL) [42001-224]
+[2024-08-01 21:58:52] [ INFO ] [Main:15] conexion establecida
+[2024-08-01 21:58:53] [ INFO ] [Main:26] datos cargados
+[2024-08-01 21:58:53] [ ERROR] [Main:47] Error de Sintaxis en sentencia SQL "DELETE [*]* FROM ANIMALES WHERE ID = 4"; se esperaba "identifier"
+Syntax error in SQL statement "DELETE [*]* FROM ANIMALES WHERE ID = 4"; expected "identifier"; SQL statement:
+DELETE * FROM ANIMALES WHERE ID = 4 [42001-224]
+[2024-08-01 22:00:20] [ INFO ] [Main:15] conexion establecida
+[2024-08-01 22:00:20] [ INFO ] [Main:26] datos cargados
+[2024-08-01 22:00:20] [ WARN ] [Main:38] elminamos a Perry
+[2024-08-01 22:00:55] [ INFO ] [Main:15] conexion establecida
+[2024-08-01 22:00:55] [ INFO ] [Main:26] datos cargados
+[2024-08-01 22:00:55] [ WARN ] [Main:38] elminamos a Ruda
