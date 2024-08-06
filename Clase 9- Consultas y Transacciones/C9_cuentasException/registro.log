@@ -1,0 +1,28 @@
+[2024-08-06 19:53:22] [ INFO ] [Cuentas:22] tabla creada con exito
+[2024-08-06 19:58:27] [ INFO ] [Cuentas:23] tabla creada con exito
+[2024-08-06 20:02:27] [ ERROR] [Cuentas:42] La base de datos puede que ya esté siendo utilizada: "C:/Users/jorge.pereyra/tablaCuenta.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/jorge.pereyra/tablaCuenta.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-08-06 20:02:46] [ INFO ] [Cuentas:23] tabla creada con exito
+[2024-08-06 20:02:47] [ INFO ] [Cuentas:38] saldo actualizado efectivamente
+[2024-08-06 20:06:59] [ INFO ] [Cuentas:23] tabla creada con exito
+[2024-08-06 20:06:59] [ INFO ] [Cuentas:38] saldo actualizado efectivamente
+[2024-08-06 20:07:25] [ INFO ] [Cuentas:23] tabla creada con exito
+[2024-08-06 20:07:25] [ INFO ] [Cuentas:38] saldo actualizado efectivamente
+[2024-08-06 20:07:25] [ INFO ] [Cuentas:44] saldo nuevamente actualizado efectivamente
+[2024-08-06 20:15:11] [ ERROR] [Cuentas:61] La base de datos puede que ya esté siendo utilizada: "C:/Users/jorge.pereyra/tablaCuenta.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/jorge.pereyra/tablaCuenta.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-08-06 20:15:20] [ INFO ] [Cuentas:20] tabla creada con exito
+[2024-08-06 20:15:20] [ INFO ] [Cuentas:35] saldo actualizado efectivamente
+[2024-08-06 20:15:20] [ INFO ] [Cuentas:42] saldo nuevamente actualizado efectivamente
+[2024-08-06 20:15:20] [ ERROR] [Cuentas:61] forzamos una excepcion
+[2024-08-06 20:16:29] [ INFO ] [Cuentas:20] tabla creada con exito
+[2024-08-06 20:16:29] [ INFO ] [Cuentas:35] saldo actualizado efectivamente
+[2024-08-06 20:16:29] [ INFO ] [Cuentas:42] saldo nuevamente actualizado efectivamente
+[2024-08-06 20:16:29] [ ERROR] [Cuentas:61] forzamos una excepcion
+[2024-08-06 20:25:18] [ INFO ] [Cuentas:20] tabla creada con exito
+[2024-08-06 20:25:18] [ INFO ] [Cuentas:35] saldo actualizado efectivamente
+[2024-08-06 20:25:18] [ INFO ] [Cuentas:43] saldo nuevamente actualizado efectivamente
+[2024-08-06 20:27:28] [ INFO ] [Cuentas:20] tabla creada con exito
+[2024-08-06 20:27:28] [ INFO ] [Cuentas:35] saldo actualizado efectivamente
+[2024-08-06 20:31:04] [ INFO ] [Cuentas:20] tabla creada con exito
+[2024-08-06 20:31:04] [ INFO ] [Cuentas:35] saldo actualizado efectivamente
