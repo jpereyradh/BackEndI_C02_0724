@@ -1,0 +1,33 @@
+[2024-08-08 20:44:20] [ ERROR] [BD:29] error inesperado: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES VALUES('Julian','Espinoza','234455667','2024-08-08','1'),('Helen','Vasquez','3445666','2024-07-20','2'); INSERT INTO DOMICILIOS VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle Falsa','123','Sprinfield','EUA') [21002-224]
+[2024-08-08 20:44:20] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-08 20:47:06] [ ERROR] [BD:29] error inesperado: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES VALUES('Julian','Espinoza','234455667','2024-08-08','1'),('Helen','Vasquez','3445666','2024-07-20','2'); INSERT INTO DOMICILIOS VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle Falsa','123','Sprinfield','EUA') [21002-224]
+[2024-08-08 20:47:06] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-08 20:48:40] [ ERROR] [BD:29] error inesperado: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES VALUES('Julian','Espinoza','234455667','2024-08-08',1),('Helen','Vasquez','3445666','2024-07-20',2); INSERT INTO DOMICILIOS VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle Falsa','123','Sprinfield','EUA') [21002-224]
+[2024-08-08 20:48:40] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-08 20:51:38] [ ERROR] [BD:29] error inesperado: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES VALUES('Julian','Espinoza','234455667','2024-08-08',1),('Helen','Vasquez','3445666','2024-07-20',2); INSERT INTO DOMICILIOS VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle Falsa','123','Sprinfield','EUA') [21002-224]
+[2024-08-08 20:51:38] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-08 20:53:35] [ ERROR] [BD:29] error inesperado: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO DOMICILIOS VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle Falsa','123','Sprinfield','EUA'); INSERT INTO PACIENTES VALUES('Julian','Espinoza','234455667','2024-08-08',1),('Helen','Vasquez','3445666','2024-07-20',2) [21002-224]
+[2024-08-08 20:53:35] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-08 20:56:54] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-08 20:56:54] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-08 20:56:54] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-08 20:57:40] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-08 20:57:40] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-08 20:57:40] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-08 20:57:51] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-08 20:57:51] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 27
+[2024-08-08 20:58:16] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-08 20:58:16] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 27
+[2024-08-08 20:59:19] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-08 20:59:19] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-08 20:59:19] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
