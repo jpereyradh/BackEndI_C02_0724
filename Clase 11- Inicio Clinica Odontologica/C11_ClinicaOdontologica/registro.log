@@ -31,3 +31,6 @@ INSERT INTO DOMICILIOS VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle F
 [2024-08-08 20:59:19] [ INFO ] [BD:27] datos cargados con exito
 [2024-08-08 20:59:19] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 2
 [2024-08-08 20:59:19] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-08 21:13:40] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-08 21:13:40] [ INFO ] [PacienteDAOH2:84] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-08 21:13:40] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2

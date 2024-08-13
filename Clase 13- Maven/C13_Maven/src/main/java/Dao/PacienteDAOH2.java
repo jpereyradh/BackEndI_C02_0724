@@ -14,7 +14,7 @@ public class PacienteDAOH2 implements iDao<Paciente>{
     private static final String SQL_SELECT_ONE="SELECT * FROM PACIENTES WHERE ID=?";
     private static final String SQL_SELECT="SELECT * FROM PACIENTES";
     @Override
-    public Paciente guardar(Paciente paciente) {
+        public Paciente guardar(Paciente paciente) {
         logger.info("iniciando las operaciones de : guardado de: "+paciente.getNombre());
         Connection connection=null;
         try {
