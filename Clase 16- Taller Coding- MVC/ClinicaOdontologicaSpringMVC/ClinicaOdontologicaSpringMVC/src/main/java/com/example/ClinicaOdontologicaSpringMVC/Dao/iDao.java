@@ -1,4 +1,4 @@
-package Dao;
+package com.example.ClinicaOdontologicaSpringMVC.Dao;
 
 import java.util.List;
 
@@ -9,4 +9,5 @@ public interface iDao<T> {
    void eliminar(Integer id);
    List<T> listarTodos();
    T buscarporId(Integer id);
+   T buscarPorString(String string);
 }

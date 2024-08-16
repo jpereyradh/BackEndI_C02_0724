@@ -1,4 +1,4 @@
-package Dao;
+package com.example.ClinicaOdontologicaSpringMVC.Dao;
 
 import org.apache.log4j.Logger;
 
@@ -11,11 +11,11 @@ public class BD {
    private static final Logger logger= Logger.getLogger(BD.class);
    private static final String SQL_DROP_CREATE_PACIENTES=" DROP TABLE IF EXISTS PACIENTES; " +
            "CREATE TABLE PACIENTES(ID INT AUTO_INCREMENT PRIMARY KEY, NOMBRE VARCHAR(30) NOT NULL, APELLIDO VARCHAR(40) NOT NULL, " +
-           "CEDULA VARCHAR(30) NOT NULL, FECHA_INGRESO DATE NOT NULL, DOMICILIO_ID INT NOT NULL)";
+           "CEDULA VARCHAR(30) NOT NULL, FECHA_INGRESO DATE NOT NULL, DOMICILIO_ID INT NOT NULL, EMAIL VARCHAR(100) NOT NULL)";
     private static final String SQL_DROP_CREATE_DOMICILIOS="DROP TABLE IF EXISTS DOMICILIOS; " +
             "CREATE TABLE DOMICILIOS(ID INT AUTO_INCREMENT PRIMARY KEY, CALLE VARCHAR(100) NOT NULL, NUMERO INT NOT NULL, LOCALIDAD VARCHAR(100) NOT NULL, PROVINCIA VARCHAR(100) NOT NULL)";
     private static final String SQL_DROP_PRUEBA="INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES('Siempre Viva','748','Sprinfield','EUA'),('Calle Falsa','123','Sprinfield','EUA'); " +
-            "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) VALUES('Julian','Espinoza','234455667','2024-08-08',1),('Helen','Vasquez','3445666','2024-07-20',2)";
+            "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com')";
     public static void crearTablas(){
         Connection connection=null;
         try{

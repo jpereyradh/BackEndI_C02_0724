@@ -1,9 +1,11 @@
-package Service;
+package com.example.ClinicaOdontologicaSpringMVC.Service;
 
-import Dao.PacienteDAOH2;
-import Dao.iDao;
-import Model.Paciente;
+import com.example.ClinicaOdontologicaSpringMVC.Dao.PacienteDAOH2;
+import com.example.ClinicaOdontologicaSpringMVC.Dao.iDao;
+import com.example.ClinicaOdontologicaSpringMVC.Model.Paciente;
+import org.springframework.stereotype.Service;
 
+@Service
 public class PacienteService {
     private iDao<Paciente> pacienteiDao;
 
@@ -16,5 +18,8 @@ public class PacienteService {
     }
     public Paciente buscarPorID(Integer id){
         return pacienteiDao.buscarporId(id);
+    }
+    public Paciente buscarPorCorreo(String correo){
+        return pacienteiDao.buscarPorString(correo);
     }
 }

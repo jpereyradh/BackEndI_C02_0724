@@ -1,7 +1,7 @@
-package Dao;
+package com.example.ClinicaOdontologicaSpringMVC.Dao;
 
-import Model.Domicilio;
-import Model.Paciente;
+import com.example.ClinicaOdontologicaSpringMVC.Model.Domicilio;
+import com.example.ClinicaOdontologicaSpringMVC.Model.Paciente;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
@@ -10,8 +10,9 @@ import java.util.List;
 public class PacienteDAOH2 implements iDao<Paciente>{
 
     private static final Logger logger=Logger.getLogger(PacienteDAOH2.class);
-    private static final String SQL_INSERT="INSERT INTO PACIENTES VALUES(?,?,?,?,?)";
+    private static final String SQL_INSERT="INSERT INTO PACIENTES VALUES(?,?,?,?,?,?)";
     private static final String SQL_SELECT_ONE="SELECT * FROM PACIENTES WHERE ID=?";
+    private static final String SQL_SELECT_EMAIL="SELECT * FROM PACIENTES WHERE EMAIL=?";
     private static final String SQL_SELECT="SELECT * FROM PACIENTES";
     @Override
         public Paciente guardar(Paciente paciente) {
@@ -27,6 +28,7 @@ public class PacienteDAOH2 implements iDao<Paciente>{
         psInsert.setString(3, paciente.getCedula());
         psInsert.setDate(4, Date.valueOf(paciente.getFechaIngreso()));
         psInsert.setInt(5,paciente.getDomicilio().getId());
+        psInsert.setString(6, paciente.getEmail());
        //en teoria en este punto cargo a la tabla y genero ID
         //comunico tabla con objeto
         ResultSet rs= psInsert.getGeneratedKeys(); //traigo los ID
@@ -94,11 +96,40 @@ public class PacienteDAOH2 implements iDao<Paciente>{
             DomicilioDAOH2 daoAux= new DomicilioDAOH2();
             while (rs.next()){
                 domicilio= daoAux.buscarporId(rs.getInt(6)); //--< FK
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio);
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7));
             }
 
         }catch (Exception e){
             logger.error("problemas con la BD"+e.getMessage());
+        }
+        return paciente;
+    }
+
+    @Override
+    public Paciente buscarPorString(String string) {
+        logger.info("iniciando las operaciones de busqueda de : "+string);
+        Paciente paciente=null;
+        Domicilio domicilio= null;
+        DomicilioDAOH2 daoAux= new DomicilioDAOH2();
+        Connection connection=null;
+        try{
+            connection=BD.getConnection();
+            PreparedStatement psSelectEmail= connection.prepareStatement(SQL_SELECT_EMAIL);
+            psSelectEmail.setString(1,string);
+            ResultSet rs= psSelectEmail.executeQuery();
+            while(rs.next()){
+                domicilio= daoAux.buscarporId(rs.getInt(6)); //--< FK
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3), rs.getString(4),rs.getDate(5).toLocalDate(),domicilio,rs.getString(7));
+                            }
+
+        }catch (Exception e){
+            logger.error("Error en la conexion: "+e.getMessage());
+        }
+        if(paciente!=null){
+            logger.info("busqueda exitosa:  Nombre y Apellido: "+paciente.getNombre()+" "+paciente.getApellido());
+        }else{
+            logger.warn("busqueda sin resultados coincidentes: "+paciente);
+
         }
         return paciente;
     }

@@ -1,6 +1,6 @@
-package Dao;
+package com.example.ClinicaOdontologicaSpringMVC.Dao;
 
-import Model.Domicilio;
+import com.example.ClinicaOdontologicaSpringMVC.Model.Domicilio;
 import org.apache.log4j.Logger;
 
 import java.sql.Connection;
@@ -64,5 +64,10 @@ public class DomicilioDAOH2 implements iDao<Domicilio>{
             logger.error("problemas con la BD"+e.getMessage());
         }
         return domicilio;
+    }
+
+    @Override
+    public Domicilio buscarPorString(String string) {
+        return null;
     }
 }
