@@ -20,3 +20,7 @@ SELECT * FROM PACIENTES WHERE ID=? [22018-224]
 [2024-08-15 21:52:27] [ INFO ] [BD:27] datos cargados con exito
 [2024-08-15 21:52:36] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : julian@ju
 [2024-08-15 21:52:36] [ WARN ] [PacienteDAOH2:131] busqueda sin resultados coincidentes: null
+[2024-08-15 21:53:55] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-15 21:54:24] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : julian@julian.com
+[2024-08-15 21:54:24] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-15 21:54:24] [ INFO ] [PacienteDAOH2:129] busqueda exitosa:  Nombre y Apellido: Julian Espinoza
