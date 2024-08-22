@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Estudiantes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/get_pelicula.js"></script>
+    <script type="text/javascript" src="/js/update_pelicula.js"></script>
+    <script type="text/javascript" src="/js/delete_pelicula.js"></script>
+</head>
+<body>
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Agregar nueva</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/peliculaList.html/">Todas</a>
+        </li>
+    </ul>
+
+    <div id="div_pelicula_table">
+        <h1>Peliculas</h1>
+        <div class="row col-md-6 table-responsive">
+            <table id="peliculaTable" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>Categoria</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="peliculaTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6" style="display: none;
+											background-color:#e6fffa; padding:10px; border-radius:3px"
+             id="div_pelicula_updating">
+            <form id="update_pelicula_form">
+                <div class="form-group">
+                    <label >Id:</label>
+                    <input type="text" class="form-control" id="pelicula_id" readonly>
+                </div>
+                <div class="form-group">
+                    <label >Titulo:</label>
+                    <input type="text" class="form-control" placeholder="titulo" id="titulo">
+                </div>
+                <div class="form-group">
+                    <label >Categoria:</label>
+                    <input type="text" class="form-control" placeholder="categoria" id="categoria">
+                </div>
+                <div class="form-group">
+                    <label >Cant. premios:</label>
+                    <input type="text" class="form-control" placeholder="premios" id="premios">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            <div id="response" style="display:none; margin:10px">
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+</body>
+</html>
