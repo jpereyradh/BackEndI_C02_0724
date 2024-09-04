@@ -1,0 +1,164 @@
+[2024-08-15 21:41:08] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-15 21:42:19] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : helen@helen.com
+[2024-08-15 21:42:19] [ ERROR] [PacienteDAOH2:126] Error en la conexion: Conversión de datos fallida, convirtiendo "helen@helen.com"
+Data conversion error converting "helen@helen.com"; SQL statement:
+SELECT * FROM PACIENTES WHERE ID=? [22018-224]
+[2024-08-15 21:42:19] [ WARN ] [PacienteDAOH2:131] busqueda sin resultados coincidentesnull
+[2024-08-15 21:44:46] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-15 21:45:05] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : helen@helen.com
+[2024-08-15 21:45:05] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-15 21:45:05] [ INFO ] [PacienteDAOH2:129] busqueda exitosa: helen@helen.comNombre y Apellido: Helen Vasquez
+[2024-08-15 21:48:23] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-15 21:48:37] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : helen@helen.com
+[2024-08-15 21:48:37] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-15 21:48:37] [ INFO ] [PacienteDAOH2:129] busqueda exitosa:  Nombre y Apellido: Helen Vasquez
+[2024-08-15 21:48:49] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : julian@julian.com
+[2024-08-15 21:48:49] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-15 21:48:49] [ INFO ] [PacienteDAOH2:129] busqueda exitosa:  Nombre y Apellido: Julian Espinoza
+[2024-08-15 21:49:04] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : julian@ju
+[2024-08-15 21:49:04] [ WARN ] [PacienteDAOH2:131] busqueda sin resultados coincidentesnull
+[2024-08-15 21:52:27] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-15 21:52:36] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : julian@ju
+[2024-08-15 21:52:36] [ WARN ] [PacienteDAOH2:131] busqueda sin resultados coincidentes: null
+[2024-08-15 21:53:55] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-15 21:54:24] [ INFO ] [PacienteDAOH2:110] iniciando las operaciones de busqueda de : julian@julian.com
+[2024-08-15 21:54:24] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-15 21:54:24] [ INFO ] [PacienteDAOH2:129] busqueda exitosa:  Nombre y Apellido: Julian Espinoza
+[2024-08-20 19:35:47] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-20 19:40:30] [ INFO ] [PacienteDAOH2:19] iniciando las operaciones de : guardado de: Constanza
+[2024-08-20 19:40:30] [ INFO ] [DomicilioDAOH2:21] iniciando las operaciones de : guardado de un domicilio: null
+[2024-08-20 19:40:30] [ ERROR] [DomicilioDAOH2:38] problemas con la BDLa cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO DOMICILIOS VALUES(?,?,?,?) [21002-224]
+[2024-08-20 19:40:30] [ ERROR] [PacienteDAOH2:42] problemas con la BDLa cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES VALUES(?,?,?,?,?,?) [21002-224]
+[2024-08-20 19:49:18] [ INFO ] [BD:27] datos cargados con exito
+[2024-08-20 19:49:30] [ INFO ] [PacienteDAOH2:19] iniciando las operaciones de : guardado de: Constanza
+[2024-08-20 19:49:30] [ INFO ] [DomicilioDAOH2:21] iniciando las operaciones de : guardado de un domicilio: calle siempre viva
+[2024-08-20 19:49:30] [ INFO ] [DomicilioDAOH2:35] domicilio persistido con exito
+[2024-08-20 19:49:30] [ INFO ] [PacienteDAOH2:40] paciente registrado: ID: 3 con domicilio asignado: 3
+[2024-08-20 21:50:16] [ ERROR] [BD:33] error inesperado: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com') [*]INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES('Mathias','Santos','MP10')"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com') [*]INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES('Mathias','Santos','MP10')"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com') INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES('Mathias','Santos','MP10') [42000-224]
+[2024-08-20 21:50:57] [ ERROR] [BD:33] error inesperado: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com') [*]INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES('Mathias','Santos','MP10')"
+Syntax error in SQL statement "INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com') [*]INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES('Mathias','Santos','MP10')"; SQL statement:
+INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID, EMAIL) VALUES('Julian','Espinoza','234455667','2024-08-08',1,'julian@julian.com'),('Helen','Vasquez','3445666','2024-07-20',2,'helen@helen.com') INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES('Mathias','Santos','MP10') [42000-224]
+[2024-08-20 21:52:13] [ INFO ] [OdontologoDAOH2:19] iniciando las operaciones de : guardado de: null
+[2024-08-20 21:52:13] [ ERROR] [OdontologoDAOH2:36] problemas con la BDLa columna "NOMBRE" no permite valores nulos (NULL)
+NULL not allowed for column "NOMBRE"; SQL statement:
+INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES(?,?,?) [23502-224]
+[2024-08-20 21:53:19] [ INFO ] [BD:30] datos cargados con exito
+[2024-08-20 21:54:30] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-20 21:54:42] [ INFO ] [OdontologoDAOH2:19] iniciando las operaciones de : guardado de: null
+[2024-08-20 21:54:42] [ ERROR] [OdontologoDAOH2:36] problemas con la BDLa columna "NOMBRE" no permite valores nulos (NULL)
+NULL not allowed for column "NOMBRE"; SQL statement:
+INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES(?,?,?) [23502-224]
+[2024-08-20 21:56:42] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-20 21:56:53] [ INFO ] [OdontologoDAOH2:19] iniciando las operaciones de : guardado de:  juan
+[2024-08-20 21:56:53] [ INFO ] [OdontologoDAOH2:33] odontologo cargado : 2
+[2024-08-20 21:57:48] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-20 21:58:01] [ INFO ] [OdontologoDAOH2:19] iniciando las operaciones de : guardado de:  juan
+[2024-08-20 21:58:01] [ INFO ] [OdontologoDAOH2:33] odontologo cargado : 2
+[2024-08-20 22:04:27] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-20 22:04:48] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de:  juan
+[2024-08-20 22:04:48] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 2
+[2024-08-20 22:05:04] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de:  Daniela
+[2024-08-20 22:05:04] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 3
+[2024-08-20 22:05:22] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de:  Fernando
+[2024-08-20 22:05:22] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 4
+[2024-08-20 22:05:43] [ INFO ] [OdontologoDAOH2:62] iniciando las operaciones de : listar los odontologos: 
+[2024-08-20 22:07:00] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de2
+[2024-08-20 22:07:00] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado:  juan
+[2024-08-20 22:07:11] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de3
+[2024-08-20 22:07:11] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado:  Daniela
+[2024-08-22 19:38:41] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 19:39:18] [ INFO ] [PacienteDAOH2:19] iniciando las operaciones de : guardado de: Constanza
+[2024-08-22 19:39:18] [ INFO ] [DomicilioDAOH2:21] iniciando las operaciones de : guardado de un domicilio: calle siempre viva
+[2024-08-22 19:39:18] [ ERROR] [DomicilioDAOH2:38] problemas con la BDColumna "PROVINCIAPARA" no encontrada
+Column "PROVINCIAPARA" not found; SQL statement:
+INSERT INTO DOMICILIOS (CALLE, NUMERO,LOCALIDAD, PROVINCIApara ) VALUES(?,?,?,?) [42122-224]
+[2024-08-22 19:39:18] [ ERROR] [PacienteDAOH2:42] problemas con la BDCannot invoke "java.lang.Integer.intValue()" because the return value of "com.example.ClinicaOdontologicaSpringMVC.Entity.Domicilio.getId()" is null
+[2024-08-22 19:40:32] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 19:40:47] [ INFO ] [PacienteDAOH2:19] iniciando las operaciones de : guardado de: Constanza
+[2024-08-22 19:40:47] [ INFO ] [DomicilioDAOH2:21] iniciando las operaciones de : guardado de un domicilio: calle siempre viva
+[2024-08-22 19:40:47] [ INFO ] [DomicilioDAOH2:35] domicilio persistido con exito
+[2024-08-22 19:40:47] [ INFO ] [PacienteDAOH2:40] paciente registrado: ID: 3 con domicilio asignado: 3
+[2024-08-22 19:41:01] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de:  Fernando
+[2024-08-22 19:41:01] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 2
+[2024-08-22 19:43:10] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 3
+[2024-08-22 19:43:10] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 3
+[2024-08-22 19:43:10] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de2
+[2024-08-22 19:43:10] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado:  Fernando
+[2024-08-22 19:43:10] [ INFO ] [TurnoDAOLISTA:14] iniciando las operaciones de Guardado
+[2024-08-22 19:50:21] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 19:50:57] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-22 19:50:57] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 19:50:57] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Julian
+[2024-08-22 19:50:57] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 19:50:57] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 19:50:57] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-22 19:50:57] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 19:50:57] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Julian
+[2024-08-22 19:50:57] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 19:50:57] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 19:50:57] [ INFO ] [TurnoDAOLISTA:19] turno guardado con exito
+[2024-08-22 19:51:38] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 10
+[2024-08-22 19:55:09] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 19:55:33] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-22 19:55:33] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 19:55:33] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Julian
+[2024-08-22 19:55:33] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 19:55:33] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 19:55:33] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-22 19:55:33] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 19:55:33] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Julian
+[2024-08-22 19:55:33] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 19:55:33] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 19:55:33] [ INFO ] [TurnoDAOLISTA:19] turno guardado con exito
+[2024-08-22 19:55:41] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 10
+[2024-08-22 19:58:34] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 19:58:50] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 10
+[2024-08-22 19:58:50] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 19:58:50] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 20:00:26] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 20:00:42] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 10
+[2024-08-22 20:00:42] [ WARN ] [PacienteDAOH2:110] paciente no encontrado
+[2024-08-22 20:00:42] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 20:00:42] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 20:01:33] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-22 20:01:33] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 20:01:33] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Julian
+[2024-08-22 20:01:33] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 20:01:33] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 20:01:33] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 1
+[2024-08-22 20:01:33] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 20:01:33] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Julian
+[2024-08-22 20:01:33] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 20:01:33] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 20:01:34] [ INFO ] [TurnoDAOLISTA:19] turno guardado con exito
+[2024-08-22 20:01:44] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-22 20:01:44] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 20:01:44] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Helen
+[2024-08-22 20:01:44] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 20:01:44] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 20:01:44] [ INFO ] [PacienteDAOH2:88] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-22 20:01:44] [ INFO ] [DomicilioDAOH2:60] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 20:01:44] [ INFO ] [PacienteDAOH2:107] paciente encontrado: Helen
+[2024-08-22 20:01:44] [ INFO ] [OdontologoDAOH2:88] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 20:01:44] [ INFO ] [OdontologoDAOH2:99] odontologo encontrado: Mathias
+[2024-08-22 20:01:44] [ INFO ] [TurnoDAOLISTA:19] turno guardado con exito
+[2024-08-22 21:26:20] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 21:40:15] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 21:41:39] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 21:42:00] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de: Jorge Agustin
+[2024-08-22 21:42:00] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 2
+[2024-08-22 21:42:17] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de: Jose 
+[2024-08-22 21:42:17] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 3
+[2024-08-22 21:51:25] [ INFO ] [BD:31] datos cargados con exito
+[2024-08-22 21:51:51] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de: Jorge Agustin
+[2024-08-22 21:51:51] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 2
+[2024-08-22 21:51:57] [ INFO ] [OdontologoDAOH2:20] iniciando las operaciones de : guardado de: Jorge
+[2024-08-22 21:51:57] [ INFO ] [OdontologoDAOH2:34] odontologo cargado : 3
+[2024-08-22 21:51:59] [ INFO ] [OdontologoDAOH2:62] iniciando las operaciones de : listar los odontologos: 
+[2024-08-22 21:53:32] [ INFO ] [OdontologoDAOH2:62] iniciando las operaciones de : listar los odontologos: 
